@@ -50,7 +50,7 @@ public:
 	}
 	friend std::ostream& operator<<(std::ostream &os, const MyString& myS)	//！在一个加了const限定符的成员函数中，不能够调用 非const成员函数。
 	                                                                        //! 因为如果调用了非const成员函数，就违反了const成员函数不改变对象的规定
-																			                                    //! 见http://blog.csdn.net/rainkin1993/article/details/8034657
+									        //! 见http://blog.csdn.net/rainkin1993/article/details/8034657
 	{
 		os<<myS.c_str();
 		return os;		
